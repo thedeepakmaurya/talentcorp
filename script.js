@@ -38,7 +38,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="achievement-post">
                   <img src="${post.img}" alt="${post.title}">
                   <h1>${post.title}</h1>
-                  <p>${post.excerpt.slice(0, 200)}<a style="color: #4338ca;" href="achievement-post.html?id=${post.id}"> Read more</a></p>
+                  <p>${post.excerpt.slice(
+                    0,
+                    200
+                  )}<a style="color: #4338ca;" href="achievement-post.html?id=${
+            post.id
+          }"> Read more</a></p>
                 </div>
               </a>
             `;
