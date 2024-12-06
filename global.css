@@ -229,7 +229,6 @@ hr {
 .clients img {
     width: 7%;
     height: auto;
-    filter: grayscale(100%);
 }
 
 /* team section */
