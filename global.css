@@ -67,6 +67,10 @@ hr {
     color: var(--tertiary);
 }
 
+.navbar-nav{
+    background-color: white;
+}
+
 .nav-item a:hover {
     color: var(--primary);
     border-bottom: 1px solid var(--primary);
@@ -727,6 +731,10 @@ hr {
 
     .whatsapp-btn {
         right: 5%;
+    }
+
+    .navbar-nav{
+        height: 100vh;
     }
 
 }
