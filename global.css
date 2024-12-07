@@ -24,7 +24,7 @@ a {
 }
 
 p{
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: var(--tertiary);
 }
 
@@ -144,7 +144,7 @@ hr {
 
 .about h1,
 .news h1,
-.valued h1, .achievements-container h1 {
+.valued h1, .achievements-container h1, .events h1, .team h1, .clients h1, .contact h1 {
     font-size: 2em;
     font-weight: bolder;
     text-align: center;
@@ -154,9 +154,13 @@ hr {
     -webkit-text-fill-color: transparent;
 }
 
-.achievement h1{
+.achievement h1, .news-post h1{
     text-align: left !important;
     font-size: 1.1em !important;
+}
+
+.contact h1{
+    text-align: left !important;
 }
 
 .about span {
@@ -306,6 +310,10 @@ hr {
     object-fit: cover;
 }
 
+.team-name h2{
+    font-size: 0.8em !important;
+}
+
 .team-name {
     position: absolute;
     top: 50%;
@@ -330,6 +338,11 @@ hr {
     font-size: 0.8em;
 }
 
+.about a{
+    color: var(--primary);
+    text-decoration: underline;
+}
+
 /* contract staffing  */
 .contract img {
     box-shadow: 10px 10px var(--primary);
@@ -349,7 +362,7 @@ hr {
 .contact-section {
     background-color: var(--primary);
     padding: 50px;
-    color: white;
+    color: white !important;
 }
 
 .form-inputs {
@@ -391,9 +404,8 @@ hr {
     color: var(--primary);
 }
 
-.offices p,
-.offices a {
-    color: #374151;
+.offices a{
+    color: var(--tertiary);
 }
 
 /* achievements page */
@@ -408,12 +420,12 @@ hr {
 .achievement-post {
     height: 550px !important;
     width: 340px !important;
-    border-radius: 5px;;
+    border-radius: 5px;
     border: 1px solid lightgray;
     padding-bottom: 20px;
 }
 
-.achievement-post:hover {
+.achievement-post:hover, .news-post:hover  {
     transform: scale(1.05)
 }
 
@@ -442,7 +454,7 @@ hr {
     object-fit: cover;
 }
 
-.achievement-post img:hover {
+.achievement-post img:hover, .news-post img:hover  {
     width: 340;
     height: 200px;
     transform: scale(1.1);
@@ -498,6 +510,9 @@ hr {
     width: 340px !important;
     border: 1px solid lightgray;
     padding-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+
 }
 
 .news-post h1 {

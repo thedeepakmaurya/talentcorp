@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
           postElement.innerHTML = `
               <a href="news-post.html?id=${post.id}">
                 <div class="news-post">
+                  <div style="width: 340px; height: 200px; overflow: hidden;">
                   <img src="${post.img}" alt="${post.title}">
+                  </div>
                   <h1>${post.title}</h1>
                   <p>${post.excerpt} 
                     <a style="color: #0891b2;" href="news-post.html?id=${post.id}">Read more</a>
