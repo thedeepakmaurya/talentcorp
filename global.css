@@ -1,10 +1,11 @@
 /* Didact Gothic */
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Hind+Siliguri:wght@300;400;500;600;700&family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Hind+Siliguri:wght@300;400;500;600;700&family=M+PLUS+Rounded+1c&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* root */
 :root {
-    --primary: #312e81;
-    --tertiary: #121212;
+    --primary: #0891b2;
+    --secondary: #1e40af;
+    --tertiary: #000;
 }
 
 /* global */
@@ -12,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Didact Gothic", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -20,6 +21,15 @@
 a {
     text-decoration: none;
     color: inherit;
+}
+
+p{
+    font-size: 1.2em;
+    color: var(--tertiary);
+}
+
+.about h2{
+    font-size: 1em;
 }
 
 /* justify text*/
@@ -53,32 +63,36 @@ hr {
     border-bottom: 1px solid #f1f5f9;
 }
 
+.nav-item {
+    color: var(--tertiary);
+}
+
 .nav-item a:hover {
-    border-bottom: 1px solid #312e81;
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+}
+
+.nav-link{
+    color: black !important;
+}
+
+.nav-link:hover{
+    color: var(--primary) !important;
 }
 
 .menu-custom {
     width: 100vw;
+    font-weight: bold;
     padding-bottom: 10px;
 }
 
-.custom-btn {
-    background-color: var(--primary);
-    border-radius: 50px;
-    color: white;
-    padding: auto 8px;
+.dropdown-item{
+    color: var(--tertiary);
 }
-
-.custom-btn:hover {
-    background-color: var(--primary);
-    opacity: 90%;
-    color: white;
-}
-
 
 .dropdown-item:hover {
     background-color: #fff;
-    color: #121212;
+    color: var(--primary);
 }
 
 
@@ -95,7 +109,7 @@ hr {
 }
 
 .hero-btn {
-    background-color: var(--primary);
+    background: linear-gradient(to right, var(--secondary), var(--primary));
     border-radius: 50px;
     color: white;
     padding: 4px 35px !important;
@@ -127,6 +141,24 @@ hr {
     border: none;
     object-fit: cover;
 }
+
+.about h1,
+.news h1,
+.valued h1, .achievement h1 {
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 10px !important;
+    background: -webkit-linear-gradient(var(--secondary), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about span {
+    font-weight: bold;
+    color: var(--primary);
+}
+
 
 
 /* News & media section */
@@ -179,8 +211,15 @@ hr {
     padding-top: 50px;
 }
 
+.footer-top span {
+    background: -webkit-linear-gradient(var(--secondary), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 .btn-get {
-    background-color: var(--primary);
+    background: linear-gradient(to right, var(--primary), var(--secondary));
     color: white;
     padding: 10px 20px;
     border-radius: 50px;
@@ -214,14 +253,32 @@ hr {
     color: white;
 }
 
+.footer-underline {
+    width: 25%;
+    height: 5px;
+    border-radius: 50px;
+    background: linear-gradient(to right, var(--secondary), var(--primary));
+}
+
 .footer h1 {
     font-size: 1.2em;
     padding-bottom: 1em;
 }
 
+.footer p{
+    color: white;
+    font-size: 1em;
+}
+
 .footer a:hover {
     color: var(--primary);
 }
+
+.custom-footer a {
+    color: var(--primary);
+}
+
+
 
 
 /* about page */
@@ -473,6 +530,24 @@ hr {
     font-size: 1.2em;
     font-weight: bold;
     color: #121212;
+}
+
+
+.icon-offers{
+    animation: inflight 2s linear infinite; 
+}
+
+@keyframes inflight{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+        color: var(--primary);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 
