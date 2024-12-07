@@ -144,7 +144,7 @@ hr {
 
 .about h1,
 .news h1,
-.valued h1, .achievement h1 {
+.valued h1, .achievements-container h1 {
     font-size: 2em;
     font-weight: bolder;
     text-align: center;
@@ -152,6 +152,11 @@ hr {
     background: -webkit-linear-gradient(var(--secondary), var(--primary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.achievement h1{
+    text-align: left !important;
+    font-size: 1.1em !important;
 }
 
 .about span {
