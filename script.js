@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   <img src="${post.img}" alt="${post.title}">
                   <h1>${post.title}</h1>
                   <p>${post.excerpt} 
-                    <a style="color: #4338ca;" href="news-post.html?id=${post.id}">Read more</a>
+                    <a style="color: #0891b2;" href="news-post.html?id=${post.id}">Read more</a>
                   </p>
                   <small>Published on: ${post.date}</small>
                 </div>
@@ -36,12 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
           postElement.innerHTML = `
               <a href="achievement-post.html?id=${post.id}">
                 <div class="achievement-post">
+                <div style="width: 340px; height: 200px; overflow: hidden;">
                   <img src="${post.img}" alt="${post.title}">
+                  </div>
                   <h1>${post.title}</h1>
                   <p>${post.excerpt.slice(
                     0,
                     200
-                  )}<a style="color: #4338ca;" href="achievement-post.html?id=${
+                  )}<a style="color: #0891b2;" href="achievement-post.html?id=${
             post.id
           }"> Read more</a></p>
                 </div>

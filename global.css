@@ -408,8 +408,13 @@ hr {
 .achievement-post {
     height: 550px !important;
     width: 340px !important;
+    border-radius: 5px;;
     border: 1px solid lightgray;
     padding-bottom: 20px;
+}
+
+.achievement-post:hover {
+    transform: scale(1.05)
 }
 
 .achievement-post h1 {
@@ -429,10 +434,19 @@ hr {
     color: var(--primary);
 }
 
+
 .achievement-post img {
-    width: 100%;
+    width: 340px;
     height: 200px;
+    border-radius: 5px ;
     object-fit: cover;
+}
+
+.achievement-post img:hover {
+    width: 340;
+    height: 200px;
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
 }
 
 
