@@ -159,7 +159,7 @@ hr {
 .contact h1,
 .naps h1,
 .contract h1,
-.achievement-post h1 {
+.achievement-post h1, .offices h1, #achievement-post h1, #news-post h1 {
     font-size: 2.2em;
     font-weight: bolder;
     text-align: center;
@@ -333,8 +333,9 @@ hr {
     object-fit: cover;
 }
 
+
 .team-name h2 {
-    font-size: 0.8em !important;
+    font-size: 0.9em !important;
 }
 
 .team-name {
@@ -428,7 +429,7 @@ hr {
 }
 
 .offices a {
-    color: var(--tertiary);
+    color: var(--primary);
 }
 
 /* achievements page */
@@ -497,6 +498,7 @@ hr {
 #achievement-post h1 {
     font-size: 2em;
     padding: 20px 0;
+    text-align: left !important;
 }
 
 #achievement-post img {
@@ -511,10 +513,6 @@ hr {
     box-shadow: -10px 10px var(--primary) !important;
 }
 
-#achievement-post p {
-    font-size: 1.2em;
-    color: #374151;
-}
 
 #achievement-post h2 {
     font-size: 1.2em;
@@ -571,6 +569,7 @@ hr {
 #news-post h1 {
     font-size: 2em;
     padding: 20px 0;
+    text-align: left;
 }
 
 #news-post img {
@@ -580,10 +579,7 @@ hr {
     margin-bottom: 50px;
 }
 
-#news-post p {
-    font-size: 1.2em;
-    color: #374151;
-}
+
 
 #news-post h2 {
     font-size: 1.2em;
@@ -666,10 +662,14 @@ hr {
     }
 
     .hero-container h1{
-        font-size: 1.5em;
+        font-size: 1.9em;
         text-align: left;
         font-weight: 800;
         color: white !important;
+   }
+
+   .hero-video{
+    height: 400px !important;
    }
 
     .custom-footer {
@@ -711,8 +711,8 @@ hr {
         background-color: var(--primary);
         border-radius: 50px;
         color: white;
-        padding: 5px 8px !important ;
-        font-size: 0.8em !important;
+        padding: 6px 10px !important ;
+        font-size: 0.9em !important;
     }
 
     .hero-btn:hover {
