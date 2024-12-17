@@ -242,7 +242,7 @@ hr {
 
 /* News & media section */
 .carousel-caption {
-    font-size: 1.5em !important;
+    font-size: 1.3em !important;
     font-weight: bold;
     background: -webkit-linear-gradient(var(--secondary), var(--primary));
     -webkit-background-clip: text;
