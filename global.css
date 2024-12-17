@@ -242,18 +242,18 @@ hr {
 
 /* News & media section */
 .carousel-caption {
-    font-size: 0.8em !important;
-    color: #374151 !important;
-    position: unset !important;
+    font-size: 1.5em !important;
+    font-weight: bold;
+    background: -webkit-linear-gradient(var(--secondary), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    position: unset !important;
 }
 
-.carousel-caption p {
-    font-size: 1.4em !important;
-}
 
 .carousel-custom img {
     height: 420px !important;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 /* client section*/
